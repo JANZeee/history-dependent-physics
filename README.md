@@ -1,6 +1,6 @@
 # History-Dependent Physics Models
 
-在家时我有点好奇，给模型加上物理约束后，它连续预测很多步时还会在哪些地方出错？我就用加热冷却和疲劳裂纹增长两个简单仿真，在本机做了几组小实验。
+给模型加上物理约束后，它连续预测很多步时还会在哪些地方出错？用加热冷却和疲劳裂纹增长两个简单仿真，做了几组小实验。
 
 Small, reproducible experiments comparing recurrent models with explicit physical
 state updates. This repository is independent of OASIS and requires no pretrained
