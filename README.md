@@ -8,7 +8,7 @@ video model, Minecraft installation, external dataset, or GPU.
 
 ## 演示
 
-两段动画使用已保存的测试轨迹。金属块和裂缝是示意，温度、裂纹长度和报断时刻取自实验记录。[下载 22 秒 MP4 合辑](https://raw.githubusercontent.com/JANZeee/history-dependent-physics/main/media/demos/history-physics-demo.mp4)
+下面的动画使用已保存的测试轨迹。金属块和裂缝是示意，温度、裂纹长度和报断时刻取自实验记录。[下载前两段的 22 秒 MP4 合辑](https://raw.githubusercontent.com/JANZeee/history-dependent-physics/main/media/demos/history-physics-demo.mp4)
 
 **加热与冷却。** 第 32 步后停止加热。第 128 步的仿真参考温度为 26.18 °C，普通 GRU 预测 40.01 °C，受约束模型预测 24.34 °C。
 
@@ -17,6 +17,18 @@ video model, Minecraft installation, external dataset, or GPU.
 **疲劳与断裂。** 同一条低载荷轨迹上，原受约束模型在第 121 步报断，仿真参考在第 158 步断裂，三次方载荷模型在第 159 步报断。
 
 ![疲劳与断裂动画，比较仿真参考、原受约束模型和三次方载荷模型](media/demos/fatigue-fracture.gif)
+
+**两块看起来一样的试件，哪块先断？** 我又做了个成对的小实验。每对用同样的材料参数和初始裂纹长度，过去的平均载荷也一样，只让载荷的波动幅度不同。相机只拍到遮住裂纹的外壳，所以两块试件在预测起点的画面完全相同。接下来给它们同一段载荷。动画里，仿真参考是 A 第 34 步断、B 第 46 步断。[下载成对实验的 10 秒 MP4](https://raw.githubusercontent.com/JANZeee/history-dependent-physics/main/media/demos/paired-fatigue-demo.mp4)
+
+![成对疲劳预测动画，比较三种输入设置对 A 和 B 断裂顺序的预测](media/demos/paired-fatigue-demo.gif)
+
+| 模型能看到什么 | 动画里的预测断裂步（A / B） | 512 对成段载荷测试 | 断裂步平均绝对误差 |
+|---|---:|---:|---:|
+| 只看当前画面 | 44 / 44 | 512 对均预测并列 | 9.82 步 |
+| 观测和载荷历史 | 34 / 45 | 512 / 512 排对 | 1.57 步 |
+| 直接给真实损伤 | 34 / 46 | 512 / 512 排对 | 0 步 |
+
+三个训练种子的排序结果一致，误差取三个种子的平均。三组共用生成参考答案的疲劳公式推演未来，直接给真实损伤这组是已知起点的对照。过去的画面也一直相同，所以这次帮助模型估计隐藏损伤的是载荷记录。成段测试换了载荷的排列，材料和损伤规律沿用同一套合成设定，历史网络也只是对每步特征取平均。这个小实验能说明的是，在这些条件下，载荷历史足以分辨哪块会先断。[实验记录与复现命令](experiments/history_physics_paired/README.md) · [逐种子结果](experiments/history_physics_paired/results.json)
 
 ## 做了哪些简单验证
 
@@ -49,6 +61,7 @@ video model, Minecraft installation, external dataset, or GPU.
 | 本机可行性 | 小型数值与视觉网络的 CPU/MPS 训练测速 | [说明](experiments/history_physics_local_20261110/README.md) |
 | 第一轮 | 热/疲劳两任务 × GRU/受约束模型 × 3 种子，12次训练 | [完整结果](research/history_physics_20261110/benchmark/RESULTS.md) |
 | 第二轮 | 同形GRU状态反馈×投影；状态MLP逐级约束；45次训练 | [消融与机制诊断](research/history_physics_20261110/ablation/RESULTS.md) |
+| 成对小实验 | 相同画面、不同载荷历史，比较三种输入设置 | [实验记录](experiments/history_physics_paired/README.md) |
 
 | 低载128步，3种子均值±样本标准差 | 裂纹RMSE | 断裂误报率 |
 |---|---:|---:|
