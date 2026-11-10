@@ -6,6 +6,18 @@ Small, reproducible experiments comparing recurrent models with explicit physica
 state updates. This repository is independent of OASIS and requires no pretrained
 video model, Minecraft installation, external dataset, or GPU.
 
+## 演示
+
+两段动画使用已保存的测试轨迹。金属块和裂缝是示意，温度、裂纹长度和报断时刻取自实验记录。[下载 22 秒 MP4 合辑](https://raw.githubusercontent.com/JANZeee/history-dependent-physics/main/media/demos/history-physics-demo.mp4)
+
+**加热与冷却。** 第 32 步后停止加热。第 128 步的仿真参考温度为 26.18 °C，普通 GRU 预测 40.01 °C，受约束模型预测 24.34 °C。
+
+![加热与冷却动画，比较仿真参考、普通 GRU 和受约束模型](media/demos/heat-and-cooling.gif)
+
+**疲劳与断裂。** 同一条低载荷轨迹上，原受约束模型在第 121 步报断，仿真参考在第 158 步断裂，三次方载荷模型在第 159 步报断。
+
+![疲劳与断裂动画，比较仿真参考、原受约束模型和三次方载荷模型](media/demos/fatigue-fracture.gif)
+
 ## 已完成的实验
 
 | 实验 | 设计 | 报告 |
