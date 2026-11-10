@@ -1,0 +1,137 @@
+[
+  {
+    "step": 100,
+    "train_batch_mse": 0.0009108702652156353,
+    "val_mse": 0.0010037172251031734,
+    "elapsed_seconds": 0.5731816668994725,
+    "unclipped_gradient_norm": 0.009566460736095905,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 200,
+    "train_batch_mse": 0.00021745235426351428,
+    "val_mse": 0.0002677779884834308,
+    "elapsed_seconds": 1.1280579168815166,
+    "unclipped_gradient_norm": 0.006606396287679672,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 300,
+    "train_batch_mse": 0.0002443681878503412,
+    "val_mse": 0.00017894770098791923,
+    "elapsed_seconds": 1.6921550419647247,
+    "unclipped_gradient_norm": 0.00608544098213315,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 400,
+    "train_batch_mse": 0.00014273953274823725,
+    "val_mse": 0.00011492889188957633,
+    "elapsed_seconds": 2.2531367079354823,
+    "unclipped_gradient_norm": 0.008067408576607704,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 500,
+    "train_batch_mse": 0.00011017436190741137,
+    "val_mse": 7.800155299264588e-05,
+    "elapsed_seconds": 2.806325125042349,
+    "unclipped_gradient_norm": 0.0022330665960907936,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 600,
+    "train_batch_mse": 5.0894948799395934e-05,
+    "val_mse": 5.452554250950925e-05,
+    "elapsed_seconds": 3.372792041860521,
+    "unclipped_gradient_norm": 0.005789212416857481,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 700,
+    "train_batch_mse": 5.6619119277456775e-05,
+    "val_mse": 5.051935431765742e-05,
+    "elapsed_seconds": 3.925812582951039,
+    "unclipped_gradient_norm": 0.006730011664330959,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 800,
+    "train_batch_mse": 5.392957245931029e-05,
+    "val_mse": 4.83158478346013e-05,
+    "elapsed_seconds": 4.544774999842048,
+    "unclipped_gradient_norm": 0.0068593411706388,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 900,
+    "train_batch_mse": 3.833491064142436e-05,
+    "val_mse": 3.836368773590948e-05,
+    "elapsed_seconds": 5.103039457928389,
+    "unclipped_gradient_norm": 0.004019951447844505,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1000,
+    "train_batch_mse": 4.531837839749642e-05,
+    "val_mse": 3.8379267607524525e-05,
+    "elapsed_seconds": 5.680505791911855,
+    "unclipped_gradient_norm": 0.0021911845542490482,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1100,
+    "train_batch_mse": 4.922455991618335e-05,
+    "val_mse": 3.57272381279472e-05,
+    "elapsed_seconds": 6.239610374905169,
+    "unclipped_gradient_norm": 0.0013105265097692609,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1200,
+    "train_batch_mse": 4.4461390643846244e-05,
+    "val_mse": 3.558937055458955e-05,
+    "elapsed_seconds": 6.797649624990299,
+    "unclipped_gradient_norm": 0.00555204413831234,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1300,
+    "train_batch_mse": 4.67875215690583e-05,
+    "val_mse": 3.6761670344276354e-05,
+    "elapsed_seconds": 7.3467410418670624,
+    "unclipped_gradient_norm": 0.002914896933361888,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1400,
+    "train_batch_mse": 5.4961099522188306e-05,
+    "val_mse": 3.629026150520076e-05,
+    "elapsed_seconds": 7.903722666902468,
+    "unclipped_gradient_norm": 0.0049245115369558334,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1500,
+    "train_batch_mse": 3.6719815398100764e-05,
+    "val_mse": 3.1957431929185987e-05,
+    "elapsed_seconds": 8.456883582985029,
+    "unclipped_gradient_norm": 0.001742031192407012,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  }
+]

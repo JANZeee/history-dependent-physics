@@ -1,0 +1,59 @@
+{
+  "config": {
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "tasks": [
+      "thermal",
+      "fatigue"
+    ],
+    "models": {
+      "thermal": [
+        "gru_plain",
+        "gru_state",
+        "gru_projected",
+        "gru_state_projected",
+        "state_free",
+        "state_full"
+      ],
+      "fatigue": [
+        "gru_plain",
+        "gru_state",
+        "gru_projected",
+        "gru_state_projected",
+        "state_free",
+        "state_gated",
+        "state_positive",
+        "state_full",
+        "state_cubic"
+      ]
+    },
+    "train_seed": 11001,
+    "val_seed": 11002,
+    "train_n": 5000,
+    "val_n": 512,
+    "length": 32,
+    "updates": 1500,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "grad_clip": 1.0,
+    "validate_every": 100,
+    "threads": 2
+  },
+  "sources": {
+    "models.py": "100516787b28f6590a61e28c00c556fc90da183f0740d7f33f296169205bbf7d",
+    "data.py": "d280d9a22f8008e1a0a1f31bb4ddb358016b579e00a3ade34a967833df941518",
+    "train.py": "df7c12811e8c37b315fe554676d7f64179563e07e58b5c3e108d3dfacc17b3c1",
+    "PROTOCOL.md": "c167c880c6614ac006e7118b3e25e646d5a6cabe6ef27cbc6ab96c24b60448eb"
+  },
+  "fingerprint": "03d6267a2d63d83e7b89e3fd36f46568e9c61dd7c4268d7fbbbd6d65a7026072",
+  "start_utc": "2026-11-10T14:42:58.651937+00:00",
+  "python": "3.12.13",
+  "torch": "2.12.1",
+  "numpy": "2.5.0",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "device": "cpu",
+  "dtype": "float32"
+}

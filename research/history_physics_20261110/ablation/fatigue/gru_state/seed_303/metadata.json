@@ -1,0 +1,24 @@
+{
+  "task": "fatigue",
+  "model": "gru_state",
+  "seed": 303,
+  "fingerprint": "03d6267a2d63d83e7b89e3fd36f46568e9c61dd7c4268d7fbbbd6d65a7026072",
+  "parameters": 13889,
+  "schedule_sha256": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+  "initial_weights_sha256": "d978152acf269f6b0a2194eb5dedbce5c3cafb6cbfceb041d6ecbdce5aab9816",
+  "initial_val_mse": 0.05722016794607043,
+  "initial_increment": {
+    "mean": -0.008538555353879929,
+    "minimum": -0.09636737406253815,
+    "maximum": 0.06647461652755737,
+    "negative_fraction": 0.5625
+  },
+  "status": "complete",
+  "best_step": 1400,
+  "best_val_mse": 0.0012103880653739907,
+  "updates_completed": 1500,
+  "zero_gradient_updates": 0,
+  "training_seconds": 8.144531124969944,
+  "process_max_rss_bytes": 344555520,
+  "checkpoint": "./outputs/history_physics_ablation_20261110/fatigue/gru_state/seed_303/best.pt"
+}

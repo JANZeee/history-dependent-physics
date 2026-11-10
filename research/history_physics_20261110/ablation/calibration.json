@@ -1,0 +1,71 @@
+{
+  "checkpoint_hashes": {
+    "101": "620bb683d16bb81f3d62fd910c2e6a7dede1f6369b51709e997035b50af17c01",
+    "202": "72de546564c8e0ec7841ef922ea10ce223dc1e6cefa137baeae986a7f6a1912e",
+    "303": "ceec28430404bd6e852197d973b5e789133a415574721a264b31a178f3bdc3c9"
+  },
+  "config": {
+    "alpha_clip": [
+      0.1,
+      2.0
+    ],
+    "fitted_prefix": 128,
+    "generated_length": 256,
+    "mode": "low_load",
+    "n": 512,
+    "seed": 21002
+  },
+  "hashes": {
+    "active": "af97f8475ae2216b1e51a861d5474cdb46145cf6f3da41b8d4c744af57269d96",
+    "failed": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "initial": "7310ba669a2143272502ecafd8493d4109c97841036febbf4a0c4ca0893b5bbb",
+    "x": "17f1787d080a6eb8b4636ff628b887ca2cd10ba34833e9921622cae143b97144",
+    "y": "2d47fcd4e2d4fd90372ae61396c7a60c02ec197cb0e387a90d4c8c85e08357cd"
+  },
+  "implementation_sha256": "511ee2101dfaf77cccb4064c2dd79923b36b337cbce01b35917758f120802397",
+  "mask": "active and true post-step crack < 1; excludes true crossing steps",
+  "objective": "sum((alpha * uncapped_oracle_predicted_increment - true_increment)^2)",
+  "rows": [
+    {
+      "alpha": 0.7109902530578867,
+      "clipped": false,
+      "denominator": 0.8130980722741994,
+      "fitted_count": 49284,
+      "increment_mse_after": 9.031392764357712e-07,
+      "increment_mse_before": 2.2811797144831944e-06,
+      "model": "state_full",
+      "numerator": 0.5781048041671129,
+      "seed": 101,
+      "task": "fatigue",
+      "unclipped_alpha": 0.7109902530578867
+    },
+    {
+      "alpha": 0.7339451844021418,
+      "clipped": false,
+      "denominator": 0.767856429542821,
+      "fitted_count": 49284,
+      "increment_mse_after": 8.504124079663499e-07,
+      "increment_mse_before": 1.9532620952253335e-06,
+      "model": "state_full",
+      "numerator": 0.5635645287751759,
+      "seed": 202,
+      "task": "fatigue",
+      "unclipped_alpha": 0.7339451844021418
+    },
+    {
+      "alpha": 0.7447917409667445,
+      "clipped": false,
+      "denominator": 0.7453602508054025,
+      "fitted_count": 49284,
+      "increment_mse_after": 8.537229385916437e-07,
+      "increment_mse_before": 1.838753555403147e-06,
+      "model": "state_full",
+      "numerator": 0.555138158844765,
+      "seed": 303,
+      "task": "fatigue",
+      "unclipped_alpha": 0.7447917409667445
+    }
+  ],
+  "target_is_increment_not_rate": true,
+  "test_data_constructed_before_this_lock": false
+}

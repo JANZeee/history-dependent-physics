@@ -1,0 +1,24 @@
+{
+  "task": "fatigue",
+  "model": "state_gated",
+  "seed": 303,
+  "fingerprint": "03d6267a2d63d83e7b89e3fd36f46568e9c61dd7c4268d7fbbbd6d65a7026072",
+  "parameters": 13553,
+  "schedule_sha256": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+  "initial_weights_sha256": "e214167f39a849d4a6cca8416a6de8340db20cb8c36569190a05db84172e4a31",
+  "initial_val_mse": 0.035424024099484086,
+  "initial_increment": {
+    "mean": -0.000501660630106926,
+    "minimum": -0.0015657693147659302,
+    "maximum": 0.0,
+    "negative_fraction": 0.828125
+  },
+  "status": "complete",
+  "best_step": 1100,
+  "best_val_mse": 0.001243459941179026,
+  "updates_completed": 1500,
+  "zero_gradient_updates": 0,
+  "training_seconds": 7.564371209125966,
+  "process_max_rss_bytes": 344555520,
+  "checkpoint": "./outputs/history_physics_ablation_20261110/fatigue/state_gated/seed_303/best.pt"
+}

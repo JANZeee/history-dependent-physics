@@ -1,0 +1,216 @@
+{
+  "status": "pass",
+  "scope": "Independent array-based recomputation; no model retraining or inference",
+  "numeric_checks": 1582,
+  "test_array_identity_checks": 225,
+  "paired_minibatch_checks": 6,
+  "total_checks": 1813,
+  "training_runs": 12,
+  "prediction_files": 54,
+  "saved_failure_cases": 30,
+  "numeric_tolerances": {
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  "paired_minibatch_hashes": [
+    {
+      "task": "thermal",
+      "seed": 101,
+      "schedule_sha256": {
+        "gru": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "constrained": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf"
+      },
+      "matched": true
+    },
+    {
+      "task": "thermal",
+      "seed": 202,
+      "schedule_sha256": {
+        "gru": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "constrained": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1"
+      },
+      "matched": true
+    },
+    {
+      "task": "thermal",
+      "seed": 303,
+      "schedule_sha256": {
+        "gru": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "constrained": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d"
+      },
+      "matched": true
+    },
+    {
+      "task": "fatigue",
+      "seed": 101,
+      "schedule_sha256": {
+        "gru": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "constrained": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf"
+      },
+      "matched": true
+    },
+    {
+      "task": "fatigue",
+      "seed": 202,
+      "schedule_sha256": {
+        "gru": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "constrained": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1"
+      },
+      "matched": true
+    },
+    {
+      "task": "fatigue",
+      "seed": 303,
+      "schedule_sha256": {
+        "gru": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "constrained": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d"
+      },
+      "matched": true
+    }
+  ],
+  "recomputed_fatigue_event_counts": [
+    {
+      "task": "fatigue",
+      "model": "gru",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 15,
+      "false_negatives": 217,
+      "true_failure_count": 497,
+      "capped_event_time_mae_steps": 34.857421875
+    },
+    {
+      "task": "fatigue",
+      "model": "gru",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 3,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.18359375
+    },
+    {
+      "task": "fatigue",
+      "model": "constrained",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 4,
+      "true_nonfailure_count": 15,
+      "false_negatives": 1,
+      "true_failure_count": 497,
+      "capped_event_time_mae_steps": 3.2734375
+    },
+    {
+      "task": "fatigue",
+      "model": "constrained",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 32,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 1.201171875
+    },
+    {
+      "task": "fatigue",
+      "model": "gru",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 15,
+      "false_negatives": 238,
+      "true_failure_count": 497,
+      "capped_event_time_mae_steps": 36.677734375
+    },
+    {
+      "task": "fatigue",
+      "model": "gru",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 5,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.369140625
+    },
+    {
+      "task": "fatigue",
+      "model": "constrained",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 6,
+      "true_nonfailure_count": 15,
+      "false_negatives": 1,
+      "true_failure_count": 497,
+      "capped_event_time_mae_steps": 3.12109375
+    },
+    {
+      "task": "fatigue",
+      "model": "constrained",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 33,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 1.11328125
+    },
+    {
+      "task": "fatigue",
+      "model": "gru",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 15,
+      "false_negatives": 230,
+      "true_failure_count": 497,
+      "capped_event_time_mae_steps": 32.40625
+    },
+    {
+      "task": "fatigue",
+      "model": "gru",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 2,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.259765625
+    },
+    {
+      "task": "fatigue",
+      "model": "constrained",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 1,
+      "true_nonfailure_count": 15,
+      "false_negatives": 1,
+      "true_failure_count": 497,
+      "capped_event_time_mae_steps": 3.47265625
+    },
+    {
+      "task": "fatigue",
+      "model": "constrained",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 32,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 1.201171875
+    }
+  ],
+  "evaluation_sha256": "4a6c210c779b2f8ba0775bcd7234c7a0d9847ddcaa28ca73c288a457560d683c",
+  "training_complete_sha256": "62e66c2396cfe5fc4a4b0f9bd13879abe59f15fae75221f26bed689f99027007",
+  "audit_script_sha256": "2e0ba94386a2ad9fd05e8edec17cc75a4bbb83a63cac03755d995a4910c057b9",
+  "issues": [],
+  "elapsed_seconds": 0.26619491702876985,
+  "interpretation_notes": [
+    "Random-128 has 497 true failures and only 15 true nonfailures; its FP denominator is small.",
+    "Low-load-128 has 511 true nonfailures and one true failure; report FP counts, not only state RMSE.",
+    "Zero structural violations do not guarantee accurate learned damage increments or event times.",
+    "Censored event times use horizon+1; capped MAE is not an uncensored failure-time error."
+  ]
+}

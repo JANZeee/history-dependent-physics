@@ -1,0 +1,53 @@
+{
+  "hashes": {
+    "train": {
+      "x": "3e3037704ce21b9deb3e20159334b2016b7104ffabbedd1b147904d8e2fc0356",
+      "y": "b79ec93026cc407a1c813790e3d78972361fe11b48fa6436d970def8e8cab6eb",
+      "initial": "28b4f41a7f3ee6d8cc87272db6e09c6d3566551fd4d18702b041a21658272a85"
+    },
+    "val": {
+      "x": "59fa0a88494e95c80b368dfa20bc3fd68f3e24008ddda07800df44c6e97b4c5f",
+      "y": "5c6783bd84bae5fdbefce2bb80ad709dc50daf864750430abd156aac1f42095b",
+      "initial": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad"
+    }
+  },
+  "meta": {
+    "task": "thermal",
+    "n": 5000,
+    "length": 32,
+    "seed": 11001,
+    "mode": "random",
+    "active_length": 32,
+    "features": [
+      "power_W/200",
+      "dt_s/5",
+      "loss_W_per_K/4",
+      "capacity_J_per_K/100",
+      "initial_excess_K/100"
+    ],
+    "definition": "C*dT/dt=P-H*(T-20); exact constant-input steps; target=(T-20)/100",
+    "ranges": {
+      "power_W": [
+        0,
+        200
+      ],
+      "power_zero_probability": 0.35,
+      "dt_s": [
+        0.5,
+        5
+      ],
+      "loss_W_per_K": [
+        0.5,
+        4
+      ],
+      "capacity_J_per_K": [
+        80,
+        120
+      ],
+      "initial_temperature_C": 20
+    },
+    "current_or_future_state_in_x": false,
+    "ambient_temperature_C": 20,
+    "target_scale_to_physical": 100
+  }
+}

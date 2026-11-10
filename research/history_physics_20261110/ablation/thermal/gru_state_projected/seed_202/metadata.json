@@ -1,0 +1,24 @@
+{
+  "task": "thermal",
+  "model": "gru_state_projected",
+  "seed": 202,
+  "fingerprint": "03d6267a2d63d83e7b89e3fd36f46568e9c61dd7c4268d7fbbbd6d65a7026072",
+  "parameters": 13889,
+  "schedule_sha256": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+  "initial_weights_sha256": "048e457a4255277825d8cb2b7d6b9865293f1f8a4ed9d34ebd2a694c595f5761",
+  "initial_val_mse": 0.012728904490359128,
+  "initial_increment": {
+    "mean": 0.07057856023311615,
+    "minimum": 0.0,
+    "maximum": 0.11196817457675934,
+    "negative_fraction": 0.0
+  },
+  "status": "complete",
+  "best_step": 1300,
+  "best_val_mse": 6.698579227304435e-05,
+  "updates_completed": 1500,
+  "zero_gradient_updates": 0,
+  "training_seconds": 9.710727083031088,
+  "process_max_rss_bytes": 344555520,
+  "checkpoint": "./outputs/history_physics_ablation_20261110/thermal/gru_state_projected/seed_202/best.pt"
+}

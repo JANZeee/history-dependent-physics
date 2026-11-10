@@ -1,0 +1,41 @@
+{
+  "config": {
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "tasks": [
+      "thermal",
+      "fatigue"
+    ],
+    "models": [
+      "gru",
+      "constrained"
+    ],
+    "train_seed": 11001,
+    "val_seed": 11002,
+    "train_n": 5000,
+    "val_n": 512,
+    "length": 32,
+    "updates": 1500,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "grad_clip": 1.0,
+    "validate_every": 100,
+    "threads": 2
+  },
+  "sources": {
+    "models.py": "6d73b9efa140e929752871cb96e1baee25bb90cb143077a33bfb2cd47e213279",
+    "data.py": "d280d9a22f8008e1a0a1f31bb4ddb358016b579e00a3ade34a967833df941518",
+    "train.py": "aee7cbbcb49be6f3e7cef5b8a640ed6ee4799912af4d57275e7d0f711a4566a8",
+    "PROTOCOL.md": "4bc7ddf70b09753b75598d0be0ce9ec75b86021be32e7c2664c6f9d54c02134e"
+  },
+  "fingerprint": "f6e3f9399133ea83e03e21f40d49dc7919f9f24e1a282bd9a2c8309f4055c30a",
+  "start_utc": "2026-11-10T14:21:09.241190+00:00",
+  "python": "3.12.13",
+  "torch": "2.12.1",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "device": "cpu",
+  "dtype": "float32"
+}

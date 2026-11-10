@@ -1,0 +1,53 @@
+{
+  "hashes": {
+    "train": {
+      "x": "9f3252114e0b6cecc38d37df5f7ad200140268fa948a4481f9523e80a25e8820",
+      "y": "4e419f882a23abe53d291265f5d1764d97e4a1747887fb624fdaa7c70cade2d0",
+      "initial": "f1ef2758d2ce117e509a4608c3d004ebc5153df4b1ada355f1b5edcb7403b8b9"
+    },
+    "val": {
+      "x": "3c9246f7814208f405adb10a3accc13825ca86bee660a079bb8a45b43a54bae3",
+      "y": "e24a581b4bea1a2ed3301199c5282e5013ad0ea8fdac7a1722e42c11ae6e18d0",
+      "initial": "ae50626aa917274392264a6d37424b713ddd4b349517b705821ff490a28c3693"
+    }
+  },
+  "meta": {
+    "task": "fatigue",
+    "n": 5000,
+    "length": 32,
+    "seed": 11001,
+    "mode": "random",
+    "active_length": 32,
+    "features": [
+      "normalized_stress_amplitude/1.5",
+      "normalized_cycle_count",
+      "growth_coefficient/0.12",
+      "initial_crack/0.2",
+      "constant_one"
+    ],
+    "definition": "da/dN=k*s^3*a^(3/2); exact steps; a>=1 triggers absorbing failure",
+    "ranges": {
+      "stress_amplitude": [
+        0.3,
+        1.5
+      ],
+      "stress_zero_probability": 0.25,
+      "cycle_count": [
+        0.5,
+        1.5
+      ],
+      "growth_coefficient": [
+        0.04,
+        0.12
+      ],
+      "initial_crack": [
+        0.08,
+        0.2
+      ],
+      "critical_crack": 1.0
+    },
+    "current_or_future_state_in_x": false,
+    "ambient_temperature_C": null,
+    "target_scale_to_physical": 1
+  }
+}

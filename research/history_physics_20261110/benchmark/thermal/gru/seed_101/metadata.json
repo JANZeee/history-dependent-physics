@@ -1,0 +1,14 @@
+{
+  "task": "thermal",
+  "model": "gru",
+  "seed": 101,
+  "fingerprint": "f6e3f9399133ea83e03e21f40d49dc7919f9f24e1a282bd9a2c8309f4055c30a",
+  "parameters": 13697,
+  "schedule_sha256": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+  "initial_val_mse": 0.047864763997495174,
+  "best_step": 1500,
+  "best_val_mse": 5.8207807796861744e-05,
+  "training_seconds": 8.955398417077959,
+  "process_max_rss_bytes": 350879744,
+  "checkpoint": "./outputs/history_physics_benchmark_20261110/thermal/gru/seed_101/best.pt"
+}

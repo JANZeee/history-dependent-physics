@@ -1,0 +1,137 @@
+[
+  {
+    "step": 100,
+    "train_batch_mse": 0.0001625603181309998,
+    "val_mse": 0.00013945136652182555,
+    "elapsed_seconds": 0.7359672088641673,
+    "unclipped_gradient_norm": 0.00041586568113416433,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 200,
+    "train_batch_mse": 9.483811300015077e-05,
+    "val_mse": 7.466758779628435e-05,
+    "elapsed_seconds": 1.4562383750453591,
+    "unclipped_gradient_norm": 0.0011018544901162386,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 300,
+    "train_batch_mse": 3.970228863181546e-05,
+    "val_mse": 3.71855378489272e-05,
+    "elapsed_seconds": 2.1699535420630127,
+    "unclipped_gradient_norm": 0.00035830255364999175,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 400,
+    "train_batch_mse": 3.7232119211694226e-05,
+    "val_mse": 2.5342901381009142e-05,
+    "elapsed_seconds": 2.896087042056024,
+    "unclipped_gradient_norm": 0.0008637455757707357,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 500,
+    "train_batch_mse": 1.2953153600392397e-05,
+    "val_mse": 1.3501196235665702e-05,
+    "elapsed_seconds": 3.614377124933526,
+    "unclipped_gradient_norm": 0.0011725577060133219,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 600,
+    "train_batch_mse": 8.896564395399764e-06,
+    "val_mse": 7.976911490459315e-06,
+    "elapsed_seconds": 4.329558499855921,
+    "unclipped_gradient_norm": 0.00014946873125154525,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 700,
+    "train_batch_mse": 6.954751370358281e-06,
+    "val_mse": 6.460359088578116e-06,
+    "elapsed_seconds": 5.0714902500621974,
+    "unclipped_gradient_norm": 0.00038648780900985,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 800,
+    "train_batch_mse": 7.594745966343908e-06,
+    "val_mse": 6.007471881730453e-06,
+    "elapsed_seconds": 5.801909500034526,
+    "unclipped_gradient_norm": 0.0004901166539639235,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 900,
+    "train_batch_mse": 5.8962832554243505e-06,
+    "val_mse": 5.7847073549055494e-06,
+    "elapsed_seconds": 6.513866042019799,
+    "unclipped_gradient_norm": 0.0010533224558457732,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1000,
+    "train_batch_mse": 6.678324098174926e-06,
+    "val_mse": 4.490615026497835e-06,
+    "elapsed_seconds": 7.232698791893199,
+    "unclipped_gradient_norm": 0.0010106592671945691,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1100,
+    "train_batch_mse": 8.279613211925607e-06,
+    "val_mse": 4.150859581386612e-06,
+    "elapsed_seconds": 7.986324209021404,
+    "unclipped_gradient_norm": 0.001371546066366136,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1200,
+    "train_batch_mse": 3.5277944334666245e-06,
+    "val_mse": 3.850483267342497e-06,
+    "elapsed_seconds": 8.719359874958172,
+    "unclipped_gradient_norm": 0.00026626812177710235,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1300,
+    "train_batch_mse": 2.9129676022421336e-06,
+    "val_mse": 3.7305247815311304e-06,
+    "elapsed_seconds": 9.430249624885619,
+    "unclipped_gradient_norm": 0.0004423526697792113,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1400,
+    "train_batch_mse": 3.962942628277233e-06,
+    "val_mse": 4.987180005855407e-06,
+    "elapsed_seconds": 10.141087417025119,
+    "unclipped_gradient_norm": 0.0008382659871131182,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1500,
+    "train_batch_mse": 2.6748898562800605e-06,
+    "val_mse": 3.6444368731736176e-06,
+    "elapsed_seconds": 10.859919124981388,
+    "unclipped_gradient_norm": 0.00014083606947679073,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  }
+]

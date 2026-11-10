@@ -1,0 +1,24 @@
+{
+  "task": "thermal",
+  "model": "state_full",
+  "seed": 303,
+  "fingerprint": "03d6267a2d63d83e7b89e3fd36f46568e9c61dd7c4268d7fbbbd6d65a7026072",
+  "parameters": 13666,
+  "schedule_sha256": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+  "initial_weights_sha256": "5ccd08fb891d485336753bce3c2af189e6413d2132ab37b03654c4a4643723e4",
+  "initial_val_mse": 0.002805518888635561,
+  "initial_increment": {
+    "mean": 0.016126012429594994,
+    "minimum": 0.0,
+    "maximum": 0.0722130537033081,
+    "negative_fraction": 0.0
+  },
+  "status": "complete",
+  "best_step": 1500,
+  "best_val_mse": 3.7166697381962877e-06,
+  "updates_completed": 1500,
+  "zero_gradient_updates": 0,
+  "training_seconds": 13.440115374978632,
+  "process_max_rss_bytes": 344555520,
+  "checkpoint": "./outputs/history_physics_ablation_20261110/thermal/state_full/seed_303/best.pt"
+}

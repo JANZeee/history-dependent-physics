@@ -1,0 +1,24 @@
+{
+  "task": "fatigue",
+  "model": "state_cubic",
+  "seed": 101,
+  "fingerprint": "03d6267a2d63d83e7b89e3fd36f46568e9c61dd7c4268d7fbbbd6d65a7026072",
+  "parameters": 13553,
+  "schedule_sha256": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+  "initial_weights_sha256": "d311c268f69d1cff28eb9d819ae0aa177d3b44ae843f84446bc2f357610d6e04",
+  "initial_val_mse": 0.01896401960402727,
+  "initial_increment": {
+    "mean": 0.002802045550197363,
+    "minimum": 0.0,
+    "maximum": 0.013664066791534424,
+    "negative_fraction": 0.0
+  },
+  "status": "complete",
+  "best_step": 1500,
+  "best_val_mse": 7.732231824775226e-05,
+  "updates_completed": 1500,
+  "zero_gradient_updates": 0,
+  "training_seconds": 7.683565083192661,
+  "process_max_rss_bytes": 344555520,
+  "checkpoint": "./outputs/history_physics_ablation_20261110/fatigue/state_cubic/seed_101/best.pt"
+}

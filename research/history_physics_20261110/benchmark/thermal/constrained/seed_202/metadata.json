@@ -1,0 +1,14 @@
+{
+  "task": "thermal",
+  "model": "constrained",
+  "seed": 202,
+  "fingerprint": "f6e3f9399133ea83e03e21f40d49dc7919f9f24e1a282bd9a2c8309f4055c30a",
+  "parameters": 13666,
+  "schedule_sha256": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+  "initial_val_mse": 0.0033014223736245185,
+  "best_step": 1400,
+  "best_val_mse": 3.45820288316645e-06,
+  "training_seconds": 13.017999415984377,
+  "process_max_rss_bytes": 350879744,
+  "checkpoint": "./outputs/history_physics_benchmark_20261110/thermal/constrained/seed_202/best.pt"
+}

@@ -1,0 +1,2671 @@
+{
+  "status": "pass",
+  "scope": "Independent frozen-source, recorded training/checkpoint, array-metric and paired-contrast audit; no retraining or inference",
+  "training_runs": 45,
+  "prediction_conditions": 324,
+  "invalid_run_conditions": 0,
+  "total_checks": 51386,
+  "checks_by_category": {
+    "source": 67,
+    "training": 146,
+    "pairing": 69,
+    "checkpoint": 315,
+    "evaluation": 1301,
+    "test_data_identity": 1638,
+    "metric": 11898,
+    "nested_prefix": 1242,
+    "aggregate": 27222,
+    "factorial": 4817,
+    "nested_contrast": 2273,
+    "calibration": 343,
+    "sameweights_cap": 55
+  },
+  "paired_hashes": [
+    {
+      "task": "thermal",
+      "seed": 101,
+      "expected_schedule_sha256": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+      "minibatch_sha256": {
+        "gru_plain": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "gru_state": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "gru_projected": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "gru_state_projected": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "state_free": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "state_full": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf"
+      },
+      "initial_weights_sha256": {
+        "GRU": {
+          "gru_plain": "231cc5a0cd1cd876730210ae101e4335f0c86418a87dfbb7f2766acd3a91d1a6",
+          "gru_state": "231cc5a0cd1cd876730210ae101e4335f0c86418a87dfbb7f2766acd3a91d1a6",
+          "gru_projected": "231cc5a0cd1cd876730210ae101e4335f0c86418a87dfbb7f2766acd3a91d1a6",
+          "gru_state_projected": "231cc5a0cd1cd876730210ae101e4335f0c86418a87dfbb7f2766acd3a91d1a6"
+        },
+        "state": {
+          "state_free": "a549433c5b7ff10bd2b89988565f187d4b7831ba14b3433393a7796b8d6f6e09",
+          "state_full": "a549433c5b7ff10bd2b89988565f187d4b7831ba14b3433393a7796b8d6f6e09"
+        }
+      }
+    },
+    {
+      "task": "thermal",
+      "seed": 202,
+      "expected_schedule_sha256": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+      "minibatch_sha256": {
+        "gru_plain": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "gru_state": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "gru_projected": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "gru_state_projected": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "state_free": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "state_full": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1"
+      },
+      "initial_weights_sha256": {
+        "GRU": {
+          "gru_plain": "048e457a4255277825d8cb2b7d6b9865293f1f8a4ed9d34ebd2a694c595f5761",
+          "gru_state": "048e457a4255277825d8cb2b7d6b9865293f1f8a4ed9d34ebd2a694c595f5761",
+          "gru_projected": "048e457a4255277825d8cb2b7d6b9865293f1f8a4ed9d34ebd2a694c595f5761",
+          "gru_state_projected": "048e457a4255277825d8cb2b7d6b9865293f1f8a4ed9d34ebd2a694c595f5761"
+        },
+        "state": {
+          "state_free": "5c27d1aeb79c9652b96e3bdc8fabab44b4eb0fc4f81eac59a9c4a024b53d2bbb",
+          "state_full": "5c27d1aeb79c9652b96e3bdc8fabab44b4eb0fc4f81eac59a9c4a024b53d2bbb"
+        }
+      }
+    },
+    {
+      "task": "thermal",
+      "seed": 303,
+      "expected_schedule_sha256": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+      "minibatch_sha256": {
+        "gru_plain": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "gru_state": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "gru_projected": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "gru_state_projected": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "state_free": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "state_full": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d"
+      },
+      "initial_weights_sha256": {
+        "GRU": {
+          "gru_plain": "c3b970351acbc6029aa708f234440691f43f6233936fc1c1f0b01ddfd6dacb31",
+          "gru_state": "c3b970351acbc6029aa708f234440691f43f6233936fc1c1f0b01ddfd6dacb31",
+          "gru_projected": "c3b970351acbc6029aa708f234440691f43f6233936fc1c1f0b01ddfd6dacb31",
+          "gru_state_projected": "c3b970351acbc6029aa708f234440691f43f6233936fc1c1f0b01ddfd6dacb31"
+        },
+        "state": {
+          "state_free": "5ccd08fb891d485336753bce3c2af189e6413d2132ab37b03654c4a4643723e4",
+          "state_full": "5ccd08fb891d485336753bce3c2af189e6413d2132ab37b03654c4a4643723e4"
+        }
+      }
+    },
+    {
+      "task": "fatigue",
+      "seed": 101,
+      "expected_schedule_sha256": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+      "minibatch_sha256": {
+        "gru_plain": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "gru_state": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "gru_projected": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "gru_state_projected": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "state_free": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "state_gated": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "state_positive": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "state_full": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf",
+        "state_cubic": "f260eedbe9a33d417e6f59c357e3ad2b94ab2bfef32d7df2b9c0df68921796cf"
+      },
+      "initial_weights_sha256": {
+        "GRU": {
+          "gru_plain": "828adb02fdd5b8e2ff8eb45c9c8b558972792eb4c05f65684b64688b0370ac94",
+          "gru_state": "828adb02fdd5b8e2ff8eb45c9c8b558972792eb4c05f65684b64688b0370ac94",
+          "gru_projected": "828adb02fdd5b8e2ff8eb45c9c8b558972792eb4c05f65684b64688b0370ac94",
+          "gru_state_projected": "828adb02fdd5b8e2ff8eb45c9c8b558972792eb4c05f65684b64688b0370ac94"
+        },
+        "state": {
+          "state_free": "d311c268f69d1cff28eb9d819ae0aa177d3b44ae843f84446bc2f357610d6e04",
+          "state_gated": "d311c268f69d1cff28eb9d819ae0aa177d3b44ae843f84446bc2f357610d6e04",
+          "state_positive": "d311c268f69d1cff28eb9d819ae0aa177d3b44ae843f84446bc2f357610d6e04",
+          "state_full": "d311c268f69d1cff28eb9d819ae0aa177d3b44ae843f84446bc2f357610d6e04",
+          "state_cubic": "d311c268f69d1cff28eb9d819ae0aa177d3b44ae843f84446bc2f357610d6e04"
+        }
+      }
+    },
+    {
+      "task": "fatigue",
+      "seed": 202,
+      "expected_schedule_sha256": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+      "minibatch_sha256": {
+        "gru_plain": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "gru_state": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "gru_projected": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "gru_state_projected": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "state_free": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "state_gated": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "state_positive": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "state_full": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1",
+        "state_cubic": "6bd3a333a93e704f5e4500630c0c3f387188d52dd994be7135ce3ab53e2b8ad1"
+      },
+      "initial_weights_sha256": {
+        "GRU": {
+          "gru_plain": "d9f79fdcc32fd1ec78d7a10fc7d778e05e49d89f0309f4509059ae324b56536f",
+          "gru_state": "d9f79fdcc32fd1ec78d7a10fc7d778e05e49d89f0309f4509059ae324b56536f",
+          "gru_projected": "d9f79fdcc32fd1ec78d7a10fc7d778e05e49d89f0309f4509059ae324b56536f",
+          "gru_state_projected": "d9f79fdcc32fd1ec78d7a10fc7d778e05e49d89f0309f4509059ae324b56536f"
+        },
+        "state": {
+          "state_free": "971164dd8057243a19ed9bc30b297190a723df756a311baf9ca504cc9a3e0f45",
+          "state_gated": "971164dd8057243a19ed9bc30b297190a723df756a311baf9ca504cc9a3e0f45",
+          "state_positive": "971164dd8057243a19ed9bc30b297190a723df756a311baf9ca504cc9a3e0f45",
+          "state_full": "971164dd8057243a19ed9bc30b297190a723df756a311baf9ca504cc9a3e0f45",
+          "state_cubic": "971164dd8057243a19ed9bc30b297190a723df756a311baf9ca504cc9a3e0f45"
+        }
+      }
+    },
+    {
+      "task": "fatigue",
+      "seed": 303,
+      "expected_schedule_sha256": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+      "minibatch_sha256": {
+        "gru_plain": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "gru_state": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "gru_projected": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "gru_state_projected": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "state_free": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "state_gated": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "state_positive": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "state_full": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d",
+        "state_cubic": "b955988531b524b196a2cb03ae0670c9a5ead0e036b173414233a83273e9df4d"
+      },
+      "initial_weights_sha256": {
+        "GRU": {
+          "gru_plain": "d978152acf269f6b0a2194eb5dedbce5c3cafb6cbfceb041d6ecbdce5aab9816",
+          "gru_state": "d978152acf269f6b0a2194eb5dedbce5c3cafb6cbfceb041d6ecbdce5aab9816",
+          "gru_projected": "d978152acf269f6b0a2194eb5dedbce5c3cafb6cbfceb041d6ecbdce5aab9816",
+          "gru_state_projected": "d978152acf269f6b0a2194eb5dedbce5c3cafb6cbfceb041d6ecbdce5aab9816"
+        },
+        "state": {
+          "state_free": "e214167f39a849d4a6cca8416a6de8340db20cb8c36569190a05db84172e4a31",
+          "state_gated": "e214167f39a849d4a6cca8416a6de8340db20cb8c36569190a05db84172e4a31",
+          "state_positive": "e214167f39a849d4a6cca8416a6de8340db20cb8c36569190a05db84172e4a31",
+          "state_full": "e214167f39a849d4a6cca8416a6de8340db20cb8c36569190a05db84172e4a31",
+          "state_cubic": "e214167f39a849d4a6cca8416a6de8340db20cb8c36569190a05db84172e4a31"
+        }
+      }
+    }
+  ],
+  "checkpoint_sha256": [
+    {
+      "task": "thermal",
+      "model": "gru_plain",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "786030c09f94d11d30a08bb0ee2d7805934a6749cdf984c368bd4eaf4958bb4d"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_plain",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "e4a8828f28e65075db36fa5cdc66da8767804e177a6b2a935c4a726b8f6b1048"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "5e0df835337948984eddfb437647285e2c45f6199c5e32fe1e11282975167976"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "6193df62cf6551db58373acda381faf991eca7b47aec69261730e9a48e2c77f5"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_projected",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "0bf55c1ef1f1b76f5d64f2473696fe64fe750c6a9e37beb9a20c2404093f0171"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_projected",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "7c09f3a239a0606de15dc23fc1d3844d6f0609a7ba5b50c7d70b42b3d8237c26"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "edeafe9f0cecde2c207dffc60fddee621d9f08db62ed8da72d7bfd1d4f2e3f56"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "1fab3015bf7d13a36017dbea055c37b49970f9bf9f2b90c0bed85dfdf8970ae9"
+    },
+    {
+      "task": "thermal",
+      "model": "state_free",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "81f6b6261e251e1800f36a4978392db173f87e5dafd72848af0c2f5717dc0eca"
+    },
+    {
+      "task": "thermal",
+      "model": "state_free",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "ede161e44e310a9f6fb81c4f31d241c7b1e529ac3f1caea7b2ddfe2ea4a93747"
+    },
+    {
+      "task": "thermal",
+      "model": "state_full",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "49be4414e5f528591c731ab052c6349878814c47bbdbedd1e312dba8fd6d6445"
+    },
+    {
+      "task": "thermal",
+      "model": "state_full",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "a42b192b14f1b6ced56f29e028f9961fc155eb22909faa3edeba0be58c5916d5"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_plain",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "bcf539ef858281f5d28305d7587e456353932c78c2af5616c5911d181bf73163"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_plain",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "77994ee74eedc733738db58d86e0657bb3a619ce9bda5142cbe9f32e483c2951"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "e3d983327c9a4766317d1961cf0a57a865f4da3cb5bf245be43da7edaed71160"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "5afb19e39d10e3807f6bc533b1e88607f7ee85b71d4ac441bf552fcb26cbde04"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_projected",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "d8fb751ca87d374667c671499dbc20572e50ad30c8cfe1e95ce746c35cb451f8"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_projected",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "a429f20f584569b21bdc62fe0ecb1445bcb158762a92c2e9131ab36717bfd67b"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "c359a42f5ddcf2b685d0a9fe1e30a2923d8aa8ec56e8ee007ece50a4a1028c6c"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "c37587abca7ff1db94345f7edd5abe37373b7491346d20293bbb441a6f001b0b"
+    },
+    {
+      "task": "thermal",
+      "model": "state_free",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "e2da6d997f9d1ff0f9fe8489bbc0003678c2f690293069db4cbdc6aabf84ca1c"
+    },
+    {
+      "task": "thermal",
+      "model": "state_free",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "36024d252ec4129a0298019366781b0d27f23702362fbe09bb4af1778b853b22"
+    },
+    {
+      "task": "thermal",
+      "model": "state_full",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "8f5599ae6fbb07de1ac2562d73ac99ebd467a1dfefa23dcaf8cd2aca5f2580a6"
+    },
+    {
+      "task": "thermal",
+      "model": "state_full",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "10d019bd0b946321861842293f4ee1c0e5bdcb258e2f722ae352bea546bbd056"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_plain",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "4742b1b5eef069545cae6bbbfd0b5d2c5680fc52cc526505d5c815cc3545cd1e"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_plain",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "234b0635fe2405d2bb8f5532660832952576adb918bb91613b2dc033b4f3df3d"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "58aae373cedbc07feb9b6f000ca2f42678a2880696213dd0302c7f9a29c93f5c"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "d0ba09536a84bb27c8de6693fc4ace2f8c7a0af71ec6bf7c61f67fc6fb6292ce"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_projected",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "ad0bb83d2df67f475f860b964cb7dfcebcaf0546cec055b30ded7686ddda1e83"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_projected",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "a06c58d0980f1095b939cb79834907047de17663da500e382a3cbd25c0b1b2b6"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "65dc4ba005b4e3f9cf6691072d61da28d3dec39f4864fc246ae5760ab52951d9"
+    },
+    {
+      "task": "thermal",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "868cf97372c7c984110cc651606a37be071987935b4e7b6ef4ed42e89d8082a4"
+    },
+    {
+      "task": "thermal",
+      "model": "state_free",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "e1eee797df641196ab49f6d58583fab2acfd6ce4741c94684f3b40d5363f2c59"
+    },
+    {
+      "task": "thermal",
+      "model": "state_free",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "e3e9bb5c3cabd95892ac9b9d89a51417d269966e5682d7d8ba2588b95c5c0433"
+    },
+    {
+      "task": "thermal",
+      "model": "state_full",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "c4b9643883cb1f72e83598a3bb3e22667aea0973d486129b1a2b635f9216a071"
+    },
+    {
+      "task": "thermal",
+      "model": "state_full",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "d4066a177ff3e62b00e40e3dac972a04f2ade7f93413ee6afdeacbc3f3b9d334"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "df469fa78ba67e86de72ad9537f5ea935aecd8d1570432aa0c45c3285f436c0d"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "b03e1306199a05b0858e54d819d6614d0458fd66ad7ae4a1a2baf0af5262528b"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "1441210545f999c75108683de40f73314884c39ec3c1ce247febb1a473bfe327"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "8de1c81f52e5cae285c69848f8711f39dbcac9cf044f13d68f82970ce69eed5c"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "10bce1db338686bc2c830a74994d383031e2514dea68209287a34d31cda50622"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "47ec81437007b47b40a6864f98b71d8799ca39acaa691c4adfe5157fba31652c"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "f618b323a96848a56b81479aa1d99af9303fd593afe027c4a0a48e2b3e8635ea"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "826fd6e591e0bf03df30ff2fe4df1a8a800d0cfd1ca9a81ab2ce761251f76c46"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "c9ec76068c53acede00f1675481b36cb26c8a9ce4332c52f738f3c5c464dbd86"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "449d781aecc027e860e946ec1eb0de395b3d9a81f829d5dea12708ba39853b33"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "d7c1f96419817835e1d127d926b3bb9d0f49baa9d00b2440cf2f60e22360e068"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "644b08f237d230e743cafcdb4e8eff63cecab3177c374b6b842ab588fa6ef161"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "157c216fba93a4203c97f1ae430fe3f692f1df7eddc0f9bd0617a7597a703006"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "cb57bdb2c58a1d3d693f963c4fb5d61cafae215cdcc0a34403e0c7d6abd6cc3f"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "620bb683d16bb81f3d62fd910c2e6a7dede1f6369b51709e997035b50af17c01"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "c0d2daedce0985802760395d035b6ce9693ef78844f65b4e43199c73dc41260d"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 101,
+      "file": "best.pt",
+      "sha256": "f8267304fddca18bf6d6767969954d73603bc89672f9c3df4de72db4c163b1d5"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 101,
+      "file": "final.pt",
+      "sha256": "c1a7a1aae2af6ed7b742bcca2d741737ba85b609642aab6f9e7e4bc01e95e9b6"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "2455d8ce5997b07c38ce6347598a36719f1d769f529f1f78c62f1493d3afa753"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "d38f128056debe678edbdc2ef1ae5aa5b4e53138bdfd23546c7d5dc40977a11f"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "d9edb55a07f4d6561c322a1509e9c9903da11586975280b49eb9ccb6edc4272e"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "f8901306a31b1e5c7e29c5af40a1b065f1a6b8f4113b7002b20d60b2c103033e"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "40d31e9e7a9a467c8d545427372c1cf6608550224fbffaed53d969fa36cb53cc"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "5b738c648fa419ad2a52d332e88b89fea7c5d70a79dbaa088e18af630553275d"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "bdd8608a29841d58eaa28e5bbd32937d51089e6143948f65d732ac28cbf9faf7"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "1d98de066ef084690e94ac5c199ce8c27d933b7914021985ce023261d6493438"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "163c8ffe94d033a1d5fd3d9bbe8c127a31135643c255fb7d4d1b14923430e2bd"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "ce15e2721418027826b35568e6da593fb8ab49a2b1ffd5704777d98e80538249"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "51fd3d4b33691426bf121c0c0bea8fc615f02b61f2f9cf5ba1138e082d84b2a4"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "49f0559437111d7a7382fdabf40ee4089298189ab01c6d661d833011620dedf3"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "8c9d0b77ae86c53ca82ffb01dd3f11b2cf9466a86a66c180456d9771835f1ccc"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "099c807b889f5fdf3fd54d6eadb082a1d8e520abd1ce8eebb1ddd662b80baa9d"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "72de546564c8e0ec7841ef922ea10ce223dc1e6cefa137baeae986a7f6a1912e"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "e2dcee87b2e7026e343a8506a4625dd4e208272af3859abc4d21d2a6b0191762"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 202,
+      "file": "best.pt",
+      "sha256": "0962baf4d6282aaed60c5b17d7f013974c0bfc00049474b43234cd66a3a7d8a2"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 202,
+      "file": "final.pt",
+      "sha256": "61582ccd147bc334b10f70d136dbdb573b518bbe1da96c21c1d1656b85d5d4ca"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "72b441d60e029dabb38d3b9c9dd42b8ffa3021fb6cd62bb89d9dcf63b9e47879"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "b9898cf8ad79443c218d2547480e078722504351471c1d8feb12d06f5df918e7"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "b6c91140fcfba0bc2e528f0774c43fc2dbc3bfdc37f383adf8f2bea46f3361e9"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "cd728862254dd582c45d7cd520610997bda2a120c93841e3459c667ce974f9b5"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "9d9ae6c40740caf401dcf4dbebc2f46d9813cb0946198cf866eaf169e0fad3f1"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "672359b6c54559c3d9b2b2c7226491d452b205a9b926f4943f6697154432836e"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "4916403586ae09da467fd9cc13927613e06207bddcb44a1f0b4a2bd22b6a59f0"
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "fb9749e7f3a99c7102d4f00e185baf30bf64748921fc8b70def0afc29cc2563c"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "b8bf5cfaa29b492cac40ddf2bf5e508ef4f28b3abdd0abd8a1e880693cbd5ecd"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "d6a3d31398383899dffc78bd9474a40d8db82d46af19a067de6dd1f0e1d5b76a"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "e42fb0be791279aa2bc2d7d5ae926bf23a5fd9aba359b9affbe46b2505a1cdb6"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "d8ea00d950a0ec2d21b8e2a3af9f3f0de0d346251ace411a9554c7eb015eee9c"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "7e585b76b361d16c0934270cb936afde721f4b4bbe97be08c2f39b1277537a73"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "c26e1b44ab7d38348920caa299c5ad33014e04aff5f7dbe06499483b413d31cf"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "ceec28430404bd6e852197d973b5e789133a415574721a264b31a178f3bdc3c9"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "3c2a07c99c85d476b8b99aed8b874e641d02342920ccd6ea5879fc8e06c0d442"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 303,
+      "file": "best.pt",
+      "sha256": "f15e153ee2889eb5ca7a8036ad53b1be91f8c93e47081ffc42172572cd0f7464"
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 303,
+      "file": "final.pt",
+      "sha256": "437fbc7d6702d535e933715884036055af878f8b088a56451e66833e87434b02"
+    }
+  ],
+  "recomputed_fatigue_event_counts": [
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 354,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 45.0078125,
+      "state_rmse": 0.24098863367727177,
+      "pre_failure_rmse": 0.17320172265962946
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 359,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 135.400390625,
+      "state_rmse": 0.3125572641366142,
+      "pre_failure_rmse": 0.17975611839537492
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 1,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.01171875,
+      "state_rmse": 0.1153236368107652,
+      "pre_failure_rmse": 0.11532358793092998
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 183,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 18.556640625,
+      "state_rmse": 0.18363902302931398,
+      "pre_failure_rmse": 0.16657624500055193
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 308,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 43.259765625,
+      "state_rmse": 0.2617356298286495,
+      "pre_failure_rmse": 0.18688126737421126
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 262,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 114.83984375,
+      "state_rmse": 0.3225165770210053,
+      "pre_failure_rmse": 0.19295520924738951
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 1,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.01171875,
+      "state_rmse": 0.09817196377293717,
+      "pre_failure_rmse": 0.09817406920954228
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 183,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 18.556640625,
+      "state_rmse": 0.19465069714569602,
+      "pre_failure_rmse": 0.17102439868760935
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 115,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 15.9140625,
+      "state_rmse": 0.21876265799597114,
+      "pre_failure_rmse": 0.1695618464852696
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 76,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 38.85546875,
+      "state_rmse": 0.2629948000408571,
+      "pre_failure_rmse": 0.1758925753823878
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 56,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 4.75390625,
+      "state_rmse": 0.13122618990080093,
+      "pre_failure_rmse": 0.1312321973715579
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 84,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 16.4375,
+      "state_rmse": 0.19866568604842066,
+      "pre_failure_rmse": 0.18768779556822493
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 120,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 18.6328125,
+      "state_rmse": 0.23746799907153182,
+      "pre_failure_rmse": 0.18292482130962184
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 70,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 40.23046875,
+      "state_rmse": 0.2685637533181494,
+      "pre_failure_rmse": 0.1885685755898055
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 11,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.611328125,
+      "state_rmse": 0.06723756416666274,
+      "pre_failure_rmse": 0.06724064226944698
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 137,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 12.740234375,
+      "state_rmse": 0.24476623149176902,
+      "pre_failure_rmse": 0.1999560609068068
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 33,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 10.119140625,
+      "state_rmse": 27.904486934794974,
+      "pre_failure_rmse": 0.12071262136822
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 4,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 14.2734375,
+      "state_rmse": 27155.435075563288,
+      "pre_failure_rmse": 0.12734491134874282
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 46,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 2.80859375,
+      "state_rmse": 1.2031383333707673,
+      "pre_failure_rmse": 1.1761133143710363
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 112,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 15.419921875,
+      "state_rmse": 1126.4502567133563,
+      "pre_failure_rmse": 3.9821788545810928
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 33,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 7.984375,
+      "state_rmse": 8.657016666975332,
+      "pre_failure_rmse": 0.12299706138844708
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 12,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 13.048828125,
+      "state_rmse": 741.861466385137,
+      "pre_failure_rmse": 0.13273930889441907
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 47,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 2.046875,
+      "state_rmse": 0.28743632550888015,
+      "pre_failure_rmse": 0.2842515305207851
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 78,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 13.759765625,
+      "state_rmse": 5.108189201122441,
+      "pre_failure_rmse": 0.8607290664567344
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 16,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 5.5546875,
+      "state_rmse": 1.1148436849085814,
+      "pre_failure_rmse": 0.08894724279604392
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 6.3984375,
+      "state_rmse": 2.7039391275951763,
+      "pre_failure_rmse": 0.09301242121053988
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 25,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.712890625,
+      "state_rmse": 0.0679007373998539,
+      "pre_failure_rmse": 0.06729250759351428
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 26,
+      "true_nonfailure_count": 329,
+      "false_negatives": 10,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 12.013671875,
+      "state_rmse": 0.43894586426517257,
+      "pre_failure_rmse": 0.1736420504836227
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 4,
+      "true_nonfailure_count": 13,
+      "false_negatives": 0,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 3.337890625,
+      "state_rmse": 0.04028171641866963,
+      "pre_failure_rmse": 0.056699778505924975
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 3.53515625,
+      "state_rmse": 0.02925484583875217,
+      "pre_failure_rmse": 0.05815150604068404
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 24,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.69140625,
+      "state_rmse": 0.0430195104674208,
+      "pre_failure_rmse": 0.04302147987955802
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 38,
+      "true_nonfailure_count": 329,
+      "false_negatives": 0,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 12.97265625,
+      "state_rmse": 0.08047245582444115,
+      "pre_failure_rmse": 0.08355711168276218
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 101,
+      "condition": "random_128",
+      "false_positives": 12,
+      "true_nonfailure_count": 13,
+      "false_negatives": 0,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 4.251953125,
+      "state_rmse": 0.05634531190419221,
+      "pre_failure_rmse": 0.0814394934593131
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 101,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 4.603515625,
+      "state_rmse": 0.04105062922962595,
+      "pre_failure_rmse": 0.08367073922690364
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 101,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.0,
+      "state_rmse": 0.007857868821726786,
+      "pre_failure_rmse": 0.007858228551116127
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 101,
+      "condition": "low_load_256",
+      "false_positives": 13,
+      "true_nonfailure_count": 329,
+      "false_negatives": 4,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 1.501953125,
+      "state_rmse": 0.019289490779014096,
+      "pre_failure_rmse": 0.019988628524427763
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 324,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 44.080078125,
+      "state_rmse": 0.24222145475490361,
+      "pre_failure_rmse": 0.16530629375830477
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 292,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 121.42578125,
+      "state_rmse": 0.300732000022226,
+      "pre_failure_rmse": 0.1711138810705699
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 1,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.01171875,
+      "state_rmse": 0.11043605429800765,
+      "pre_failure_rmse": 0.1104385471973456
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 183,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 18.556640625,
+      "state_rmse": 0.16848858186728227,
+      "pre_failure_rmse": 0.14881575042421294
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 391,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 52.03125,
+      "state_rmse": 0.2591018398709317,
+      "pre_failure_rmse": 0.1683349536425099
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 373,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 148.408203125,
+      "state_rmse": 0.33728652020245026,
+      "pre_failure_rmse": 0.1747112502425852
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 1,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.01171875,
+      "state_rmse": 0.09230676682549191,
+      "pre_failure_rmse": 0.09229953432115943
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 183,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 18.556640625,
+      "state_rmse": 0.19018570138145238,
+      "pre_failure_rmse": 0.15705612903786204
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 146,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 22.44140625,
+      "state_rmse": 0.24974831552526433,
+      "pre_failure_rmse": 0.18334507433799258
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 88,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 51.021484375,
+      "state_rmse": 0.28611208221350637,
+      "pre_failure_rmse": 0.18915411878627447
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 37,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 2.259765625,
+      "state_rmse": 0.09603283861213405,
+      "pre_failure_rmse": 0.09603723494849119
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 115,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 13.6953125,
+      "state_rmse": 0.21017200600836614,
+      "pre_failure_rmse": 0.18210847142474965
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 113,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 18.125,
+      "state_rmse": 0.2050600828013576,
+      "pre_failure_rmse": 0.16446484707141912
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 62,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 38.26953125,
+      "state_rmse": 0.23790126280949833,
+      "pre_failure_rmse": 0.17092510442810788
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 41,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 2.490234375,
+      "state_rmse": 0.10578005187535326,
+      "pre_failure_rmse": 0.10578489443436369
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 103,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 13.43359375,
+      "state_rmse": 0.19977189384118815,
+      "pre_failure_rmse": 0.18234131601612955
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 2,
+      "true_nonfailure_count": 13,
+      "false_negatives": 15,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 7.056640625,
+      "state_rmse": 85.57542221260725,
+      "pre_failure_rmse": 0.09175515203672534
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 7.91796875,
+      "state_rmse": 775417.8796978677,
+      "pre_failure_rmse": 0.09477812336267688
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 61,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 4.2578125,
+      "state_rmse": 2.9158292892223843,
+      "pre_failure_rmse": 2.830392907027746
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 99,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 16.90625,
+      "state_rmse": 23958.06177254871,
+      "pre_failure_rmse": 18.503336354829294
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 24,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 7.060546875,
+      "state_rmse": 9.611711325242233,
+      "pre_failure_rmse": 0.09733762760832343
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 2,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 9.77734375,
+      "state_rmse": 1301.9512391280166,
+      "pre_failure_rmse": 0.1037250791101217
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 50,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 2.19140625,
+      "state_rmse": 0.26251316875720415,
+      "pre_failure_rmse": 0.2594998127853627
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 55,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 14.328125,
+      "state_rmse": 5.820171593094526,
+      "pre_failure_rmse": 0.7862579801375614
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 36,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 9.2578125,
+      "state_rmse": 1.9758148896913859,
+      "pre_failure_rmse": 0.10978561786536847
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 11.705078125,
+      "state_rmse": 12.183911036262028,
+      "pre_failure_rmse": 0.11494994249381515
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 9,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.330078125,
+      "state_rmse": 0.04734017845597084,
+      "pre_failure_rmse": 0.046522692427577575
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 28,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 5.931640625,
+      "state_rmse": 0.5835922845526114,
+      "pre_failure_rmse": 0.11868057681868376
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 4,
+      "true_nonfailure_count": 13,
+      "false_negatives": 0,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 3.228515625,
+      "state_rmse": 0.03934161720396961,
+      "pre_failure_rmse": 0.05583133535997023
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 3.474609375,
+      "state_rmse": 0.02889818260902185,
+      "pre_failure_rmse": 0.057912119991632975
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 23,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.609375,
+      "state_rmse": 0.04103649470537083,
+      "pre_failure_rmse": 0.04103837333601686
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 33,
+      "true_nonfailure_count": 329,
+      "false_negatives": 0,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 11.8671875,
+      "state_rmse": 0.07583222430499197,
+      "pre_failure_rmse": 0.07873955105147917
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 202,
+      "condition": "random_128",
+      "false_positives": 9,
+      "true_nonfailure_count": 13,
+      "false_negatives": 0,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 3.5859375,
+      "state_rmse": 0.04636904106523501,
+      "pre_failure_rmse": 0.06677078357889903
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 202,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 3.927734375,
+      "state_rmse": 0.03422570348892555,
+      "pre_failure_rmse": 0.06952259832701115
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 202,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.005859375,
+      "state_rmse": 0.010486116889431229,
+      "pre_failure_rmse": 0.010483439464772995
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 202,
+      "condition": "low_load_256",
+      "false_positives": 3,
+      "true_nonfailure_count": 329,
+      "false_negatives": 18,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 3.259765625,
+      "state_rmse": 0.03383096517714687,
+      "pre_failure_rmse": 0.03375127165066823
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 340,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 45.162109375,
+      "state_rmse": 0.26757277893046416,
+      "pre_failure_rmse": 0.1806543079665138
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 293,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 124.712890625,
+      "state_rmse": 0.33903211261201505,
+      "pre_failure_rmse": 0.18677851921852198
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 1,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.01171875,
+      "state_rmse": 0.0858735644128254,
+      "pre_failure_rmse": 0.08586930969949835
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_plain",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 183,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 18.556640625,
+      "state_rmse": 0.20374746697858634,
+      "pre_failure_rmse": 0.16805371929637597
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 276,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 36.494140625,
+      "state_rmse": 0.23574352153295328,
+      "pre_failure_rmse": 0.16882943542783618
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 227,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 99.919921875,
+      "state_rmse": 0.2996723044528808,
+      "pre_failure_rmse": 0.17533305843831912
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 1,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.01171875,
+      "state_rmse": 0.09532465185444831,
+      "pre_failure_rmse": 0.09532420852621593
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 183,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 18.556640625,
+      "state_rmse": 0.18970483388344586,
+      "pre_failure_rmse": 0.1650944353643085
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 106,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 15.611328125,
+      "state_rmse": 0.2009083612243069,
+      "pre_failure_rmse": 0.16414519387668686
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 69,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 36.650390625,
+      "state_rmse": 0.24272724893540404,
+      "pre_failure_rmse": 0.17077017228748323
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 59,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 5.060546875,
+      "state_rmse": 0.14125589859785828,
+      "pre_failure_rmse": 0.14126236522377128
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_projected",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 65,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 16.908203125,
+      "state_rmse": 0.19347448450052307,
+      "pre_failure_rmse": 0.19061985473660484
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 119,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 17.701171875,
+      "state_rmse": 0.20662047225923227,
+      "pre_failure_rmse": 0.16397736506320781
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 72,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 40.392578125,
+      "state_rmse": 0.24499166016510673,
+      "pre_failure_rmse": 0.17045372941776257
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 42,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 3.03125,
+      "state_rmse": 0.11523654135731642,
+      "pre_failure_rmse": 0.11524181682978772
+    },
+    {
+      "task": "fatigue",
+      "model": "gru_state_projected",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 103,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 14.26953125,
+      "state_rmse": 0.19955156520049308,
+      "pre_failure_rmse": 0.1850825655972598
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 44,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 10.271484375,
+      "state_rmse": 93.16502265296833,
+      "pre_failure_rmse": 0.13512127261127946
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 16,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 17.150390625,
+      "state_rmse": 969016.7839835319,
+      "pre_failure_rmse": 0.14443664031553569
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 44,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 2.484375,
+      "state_rmse": 1.507220636308997,
+      "pre_failure_rmse": 1.4640011821020278
+    },
+    {
+      "task": "fatigue",
+      "model": "state_free",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 107,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 14.46875,
+      "state_rmse": 14336.099247977407,
+      "pre_failure_rmse": 6.644795022164445
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 29,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 6.90234375,
+      "state_rmse": 18.248553234173592,
+      "pre_failure_rmse": 0.11481860581378527
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 8,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 11.400390625,
+      "state_rmse": 7748.754194600605,
+      "pre_failure_rmse": 0.12466571665303114
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 46,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 1.822265625,
+      "state_rmse": 0.23860451465398913,
+      "pre_failure_rmse": 0.2339866244844327
+    },
+    {
+      "task": "fatigue",
+      "model": "state_gated",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 329,
+      "false_negatives": 60,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 13.56640625,
+      "state_rmse": 10.670744925395487,
+      "pre_failure_rmse": 0.6931214614022126
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 13,
+      "false_negatives": 30,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 7.701171875,
+      "state_rmse": 1.7311123954958019,
+      "pre_failure_rmse": 0.1066781677056836
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 9.904296875,
+      "state_rmse": 11.104417620752498,
+      "pre_failure_rmse": 0.11229706798536518
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 19,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.515625,
+      "state_rmse": 0.058936831018373916,
+      "pre_failure_rmse": 0.058130849363802445
+    },
+    {
+      "task": "fatigue",
+      "model": "state_positive",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 6,
+      "true_nonfailure_count": 329,
+      "false_negatives": 22,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 7.935546875,
+      "state_rmse": 0.5593018839623902,
+      "pre_failure_rmse": 0.14318555940737987
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 2,
+      "true_nonfailure_count": 13,
+      "false_negatives": 4,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 3.408203125,
+      "state_rmse": 0.04573217735136593,
+      "pre_failure_rmse": 0.06259923846481409
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 3.576171875,
+      "state_rmse": 0.032951888277417456,
+      "pre_failure_rmse": 0.06352902023821393
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 23,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.681640625,
+      "state_rmse": 0.042683500745467916,
+      "pre_failure_rmse": 0.04268545477524449
+    },
+    {
+      "task": "fatigue",
+      "model": "state_full",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 28,
+      "true_nonfailure_count": 329,
+      "false_negatives": 0,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 11.486328125,
+      "state_rmse": 0.08037329549110968,
+      "pre_failure_rmse": 0.08338692918223012
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 303,
+      "condition": "random_128",
+      "false_positives": 4,
+      "true_nonfailure_count": 13,
+      "false_negatives": 0,
+      "true_failure_count": 499,
+      "capped_event_time_mae_steps": 3.12109375,
+      "state_rmse": 0.03823128988564139,
+      "pre_failure_rmse": 0.05391584516578996
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 303,
+      "condition": "random_256",
+      "false_positives": 0,
+      "true_nonfailure_count": 0,
+      "false_negatives": 0,
+      "true_failure_count": 512,
+      "capped_event_time_mae_steps": 3.3203125,
+      "state_rmse": 0.027808884742890293,
+      "pre_failure_rmse": 0.05538070646196391
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 303,
+      "condition": "low_load_128",
+      "false_positives": 0,
+      "true_nonfailure_count": 511,
+      "false_negatives": 0,
+      "true_failure_count": 1,
+      "capped_event_time_mae_steps": 0.005859375,
+      "state_rmse": 0.010691492350322412,
+      "pre_failure_rmse": 0.010688712376258076
+    },
+    {
+      "task": "fatigue",
+      "model": "state_cubic",
+      "seed": 303,
+      "condition": "low_load_256",
+      "false_positives": 3,
+      "true_nonfailure_count": 329,
+      "false_negatives": 18,
+      "true_failure_count": 183,
+      "capped_event_time_mae_steps": 3.1953125,
+      "state_rmse": 0.03803734024100783,
+      "pre_failure_rmse": 0.03811744619953005
+    }
+  ],
+  "sameweights_cap_audit": {
+    "status": "checked",
+    "rows": [
+      {
+        "seed": 101,
+        "condition": "random",
+        "sequences": 512,
+        "first_crossing_mismatch_count": 0,
+        "capped_crossing_count": 512
+      },
+      {
+        "seed": 101,
+        "condition": "low_load",
+        "sequences": 512,
+        "first_crossing_mismatch_count": 0,
+        "capped_crossing_count": 221
+      },
+      {
+        "seed": 202,
+        "condition": "random",
+        "sequences": 512,
+        "first_crossing_mismatch_count": 0,
+        "capped_crossing_count": 512
+      },
+      {
+        "seed": 202,
+        "condition": "low_load",
+        "sequences": 512,
+        "first_crossing_mismatch_count": 0,
+        "capped_crossing_count": 216
+      },
+      {
+        "seed": 303,
+        "condition": "random",
+        "sequences": 512,
+        "first_crossing_mismatch_count": 0,
+        "capped_crossing_count": 512
+      },
+      {
+        "seed": 303,
+        "condition": "low_load",
+        "sequences": 512,
+        "first_crossing_mismatch_count": 0,
+        "capped_crossing_count": 211
+      }
+    ],
+    "calibration_tradeoffs": [
+      {
+        "seed": 101,
+        "condition": "random",
+        "horizon": 128,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 4,
+        "true_nonfailure_count": 13,
+        "false_negatives": 0,
+        "true_failure_count": 499,
+        "state_rmse": 0.04028171641866963,
+        "capped_event_time_mae_steps": 3.337890625
+      },
+      {
+        "seed": 101,
+        "condition": "random",
+        "horizon": 128,
+        "variant": "calibrated",
+        "alpha": 0.7109902530578867,
+        "false_positives": 0,
+        "true_nonfailure_count": 13,
+        "false_negatives": 46,
+        "true_failure_count": 499,
+        "state_rmse": 0.19548742123289398,
+        "capped_event_time_mae_steps": 18.990234375
+      },
+      {
+        "seed": 101,
+        "condition": "random",
+        "horizon": 256,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 0,
+        "true_nonfailure_count": 0,
+        "false_negatives": 0,
+        "true_failure_count": 512,
+        "state_rmse": 0.02925484583875217,
+        "capped_event_time_mae_steps": 3.53515625
+      },
+      {
+        "seed": 101,
+        "condition": "random",
+        "horizon": 256,
+        "variant": "calibrated",
+        "alpha": 0.7109902530578867,
+        "false_positives": 0,
+        "true_nonfailure_count": 0,
+        "false_negatives": 0,
+        "true_failure_count": 512,
+        "state_rmse": 0.14526636325302655,
+        "capped_event_time_mae_steps": 21.5234375
+      },
+      {
+        "seed": 101,
+        "condition": "low_load",
+        "horizon": 128,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 24,
+        "true_nonfailure_count": 511,
+        "false_negatives": 0,
+        "true_failure_count": 1,
+        "state_rmse": 0.0430195104674208,
+        "capped_event_time_mae_steps": 0.69140625
+      },
+      {
+        "seed": 101,
+        "condition": "low_load",
+        "horizon": 128,
+        "variant": "calibrated",
+        "alpha": 0.7109902530578867,
+        "false_positives": 0,
+        "true_nonfailure_count": 511,
+        "false_negatives": 0,
+        "true_failure_count": 1,
+        "state_rmse": 0.04360450561196813,
+        "capped_event_time_mae_steps": 0.005859375
+      },
+      {
+        "seed": 101,
+        "condition": "low_load",
+        "horizon": 256,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 38,
+        "true_nonfailure_count": 329,
+        "false_negatives": 0,
+        "true_failure_count": 183,
+        "state_rmse": 0.08047245582444115,
+        "capped_event_time_mae_steps": 12.97265625
+      },
+      {
+        "seed": 101,
+        "condition": "low_load",
+        "horizon": 256,
+        "variant": "calibrated",
+        "alpha": 0.7109902530578867,
+        "false_positives": 0,
+        "true_nonfailure_count": 329,
+        "false_negatives": 80,
+        "true_failure_count": 183,
+        "state_rmse": 0.15252611293791998,
+        "capped_event_time_mae_steps": 8.07421875
+      },
+      {
+        "seed": 202,
+        "condition": "random",
+        "horizon": 128,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 4,
+        "true_nonfailure_count": 13,
+        "false_negatives": 0,
+        "true_failure_count": 499,
+        "state_rmse": 0.03934161720396961,
+        "capped_event_time_mae_steps": 3.228515625
+      },
+      {
+        "seed": 202,
+        "condition": "random",
+        "horizon": 128,
+        "variant": "calibrated",
+        "alpha": 0.7339451844021418,
+        "false_positives": 0,
+        "true_nonfailure_count": 13,
+        "false_negatives": 35,
+        "true_failure_count": 499,
+        "state_rmse": 0.17761804557603686,
+        "capped_event_time_mae_steps": 16.9140625
+      },
+      {
+        "seed": 202,
+        "condition": "random",
+        "horizon": 256,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 0,
+        "true_nonfailure_count": 0,
+        "false_negatives": 0,
+        "true_failure_count": 512,
+        "state_rmse": 0.02889818260902185,
+        "capped_event_time_mae_steps": 3.474609375
+      },
+      {
+        "seed": 202,
+        "condition": "random",
+        "horizon": 256,
+        "variant": "calibrated",
+        "alpha": 0.7339451844021418,
+        "false_positives": 0,
+        "true_nonfailure_count": 0,
+        "false_negatives": 0,
+        "true_failure_count": 512,
+        "state_rmse": 0.13052924961731377,
+        "capped_event_time_mae_steps": 18.708984375
+      },
+      {
+        "seed": 202,
+        "condition": "low_load",
+        "horizon": 128,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 23,
+        "true_nonfailure_count": 511,
+        "false_negatives": 0,
+        "true_failure_count": 1,
+        "state_rmse": 0.04103649470537083,
+        "capped_event_time_mae_steps": 0.609375
+      },
+      {
+        "seed": 202,
+        "condition": "low_load",
+        "horizon": 128,
+        "variant": "calibrated",
+        "alpha": 0.7339451844021418,
+        "false_positives": 0,
+        "true_nonfailure_count": 511,
+        "false_negatives": 0,
+        "true_failure_count": 1,
+        "state_rmse": 0.041527559682422034,
+        "capped_event_time_mae_steps": 0.001953125
+      },
+      {
+        "seed": 202,
+        "condition": "low_load",
+        "horizon": 256,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 33,
+        "true_nonfailure_count": 329,
+        "false_negatives": 0,
+        "true_failure_count": 183,
+        "state_rmse": 0.07583222430499197,
+        "capped_event_time_mae_steps": 11.8671875
+      },
+      {
+        "seed": 202,
+        "condition": "low_load",
+        "horizon": 256,
+        "variant": "calibrated",
+        "alpha": 0.7339451844021418,
+        "false_positives": 0,
+        "true_nonfailure_count": 329,
+        "false_negatives": 68,
+        "true_failure_count": 183,
+        "state_rmse": 0.14422353192843615,
+        "capped_event_time_mae_steps": 7.564453125
+      },
+      {
+        "seed": 303,
+        "condition": "random",
+        "horizon": 128,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 2,
+        "true_nonfailure_count": 13,
+        "false_negatives": 4,
+        "true_failure_count": 499,
+        "state_rmse": 0.04573217735136593,
+        "capped_event_time_mae_steps": 3.408203125
+      },
+      {
+        "seed": 303,
+        "condition": "random",
+        "horizon": 128,
+        "variant": "calibrated",
+        "alpha": 0.7447917409667445,
+        "false_positives": 0,
+        "true_nonfailure_count": 13,
+        "false_negatives": 43,
+        "true_failure_count": 499,
+        "state_rmse": 0.17984116728171312,
+        "capped_event_time_mae_steps": 16.509765625
+      },
+      {
+        "seed": 303,
+        "condition": "random",
+        "horizon": 256,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 0,
+        "true_nonfailure_count": 0,
+        "false_negatives": 0,
+        "true_failure_count": 512,
+        "state_rmse": 0.032951888277417456,
+        "capped_event_time_mae_steps": 3.576171875
+      },
+      {
+        "seed": 303,
+        "condition": "random",
+        "horizon": 256,
+        "variant": "calibrated",
+        "alpha": 0.7447917409667445,
+        "false_positives": 0,
+        "true_nonfailure_count": 0,
+        "false_negatives": 0,
+        "true_failure_count": 512,
+        "state_rmse": 0.13560722427727695,
+        "capped_event_time_mae_steps": 19.189453125
+      },
+      {
+        "seed": 303,
+        "condition": "low_load",
+        "horizon": 128,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 23,
+        "true_nonfailure_count": 511,
+        "false_negatives": 0,
+        "true_failure_count": 1,
+        "state_rmse": 0.042683500745467916,
+        "capped_event_time_mae_steps": 0.681640625
+      },
+      {
+        "seed": 303,
+        "condition": "low_load",
+        "horizon": 128,
+        "variant": "calibrated",
+        "alpha": 0.7447917409667445,
+        "false_positives": 1,
+        "true_nonfailure_count": 511,
+        "false_negatives": 0,
+        "true_failure_count": 1,
+        "state_rmse": 0.03894994439716445,
+        "capped_event_time_mae_steps": 0.005859375
+      },
+      {
+        "seed": 303,
+        "condition": "low_load",
+        "horizon": 256,
+        "variant": "uncalibrated",
+        "alpha": 1.0,
+        "false_positives": 28,
+        "true_nonfailure_count": 329,
+        "false_negatives": 0,
+        "true_failure_count": 183,
+        "state_rmse": 0.08037329549110968,
+        "capped_event_time_mae_steps": 11.486328125
+      },
+      {
+        "seed": 303,
+        "condition": "low_load",
+        "horizon": 256,
+        "variant": "calibrated",
+        "alpha": 0.7447917409667445,
+        "false_positives": 0,
+        "true_nonfailure_count": 329,
+        "false_negatives": 67,
+        "true_failure_count": 183,
+        "state_rmse": 0.14151916178012536,
+        "capped_event_time_mae_steps": 6.99609375
+      }
+    ],
+    "exploratory_false_positive_profiles": [
+      {
+        "seed": 101,
+        "horizon": 128,
+        "false_positive_count": 24,
+        "pre_crossing_oracle_increment_signed_mean": 0.001750567635330297,
+        "pre_crossing_oracle_increment_relative_bias": 0.42567861498376264,
+        "fraction_with_positive_cumulative_oracle_bias": 1.0,
+        "truth_gap_to_failure_at_prediction_min": 0.40741896629333496,
+        "truth_gap_to_failure_at_prediction_median": 0.44972309470176697
+      },
+      {
+        "seed": 101,
+        "horizon": 256,
+        "false_positive_count": 38,
+        "pre_crossing_oracle_increment_signed_mean": 0.0020278038056809663,
+        "pre_crossing_oracle_increment_relative_bias": 0.613841681027811,
+        "fraction_with_positive_cumulative_oracle_bias": 1.0,
+        "truth_gap_to_failure_at_prediction_min": 0.05021113157272339,
+        "truth_gap_to_failure_at_prediction_median": 0.27218541502952576
+      },
+      {
+        "seed": 202,
+        "horizon": 128,
+        "false_positive_count": 23,
+        "pre_crossing_oracle_increment_signed_mean": 0.001707251515330338,
+        "pre_crossing_oracle_increment_relative_bias": 0.40938685917781537,
+        "fraction_with_positive_cumulative_oracle_bias": 1.0,
+        "truth_gap_to_failure_at_prediction_min": 0.3791975975036621,
+        "truth_gap_to_failure_at_prediction_median": 0.4476662874221802
+      },
+      {
+        "seed": 202,
+        "horizon": 256,
+        "false_positive_count": 33,
+        "pre_crossing_oracle_increment_signed_mean": 0.0020564434061748306,
+        "pre_crossing_oracle_increment_relative_bias": 0.5909057792558311,
+        "fraction_with_positive_cumulative_oracle_bias": 1.0,
+        "truth_gap_to_failure_at_prediction_min": 0.057598114013671875,
+        "truth_gap_to_failure_at_prediction_median": 0.23565053939819336
+      },
+      {
+        "seed": 303,
+        "horizon": 128,
+        "false_positive_count": 23,
+        "pre_crossing_oracle_increment_signed_mean": 0.0015984772972607825,
+        "pre_crossing_oracle_increment_relative_bias": 0.386441440797328,
+        "fraction_with_positive_cumulative_oracle_bias": 1.0,
+        "truth_gap_to_failure_at_prediction_min": 0.40741896629333496,
+        "truth_gap_to_failure_at_prediction_median": 0.4507586359977722
+      },
+      {
+        "seed": 303,
+        "horizon": 256,
+        "false_positive_count": 28,
+        "pre_crossing_oracle_increment_signed_mean": 0.001973531733453274,
+        "pre_crossing_oracle_increment_relative_bias": 0.5728516222127188,
+        "fraction_with_positive_cumulative_oracle_bias": 1.0,
+        "truth_gap_to_failure_at_prediction_min": 0.008476018905639648,
+        "truth_gap_to_failure_at_prediction_median": 0.23932090401649475
+      }
+    ],
+    "profile_caveat": "Post-hoc analysis conditioned on false positives, using saved true-state one-step diagnostics; not a population-wide or independently randomized causal claim.",
+    "diagnostics_sha256": "ea1a4a3e20f66ecc407442d525f00f62b86dd5b37c6a9a89e8a482b7ff902598"
+  },
+  "numeric_tolerances": {
+    "rtol": 1e-10,
+    "atol": 1e-12
+  },
+  "evaluation_sha256": "992a8052fe6eaecadc6168619fb476be47ae2d69a606566f95a50aed4c90948e",
+  "paired_effects_sha256": "da2a3c08376af3c84565bb96254abae5f4848b0558249a182863030d7777af63",
+  "training_complete_sha256": "b5425b8f4be496ef008b6ca153885a906f3158af771e8cd730755c7965e0c9a9",
+  "audit_script_sha256": "2cbe740dde63b4fece928f78986555d6c79336837a30c2ca9a6da97da77b0448",
+  "issues": [],
+  "elapsed_seconds": 5.0866303748916835,
+  "limitations": [
+    "Initialization pairing is verified from recorded hashes; initial parameter tensors were not saved.",
+    "Checkpoint selection is checked against recorded validation traces, without replaying validation inference.",
+    "Three-seed variability and fixed synthetic data do not establish real-material validity or statistical significance."
+  ]
+}

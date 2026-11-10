@@ -1,0 +1,116 @@
+{
+  "scope": "Post-test descriptive visualization only; no retraining, tuning, or aggregate changes",
+  "evaluation_sha256": "4a6c210c779b2f8ba0775bcd7234c7a0d9847ddcaa28ca73c288a457560d683c",
+  "failure_threshold": 0.9999,
+  "event_time_note": "129 means no fracture predicted/observed within the 128-step horizon",
+  "false_positive_comparison": [
+    {
+      "model": "gru",
+      "seeds": [
+        101,
+        202,
+        303
+      ],
+      "rates_percent": [
+        0.5870841487279843,
+        0.9784735812133072,
+        0.3913894324853229
+      ],
+      "false_positive_counts": [
+        3,
+        5,
+        2
+      ],
+      "true_nonfailure_denominators": [
+        511,
+        511,
+        511
+      ]
+    },
+    {
+      "model": "constrained",
+      "seeds": [
+        101,
+        202,
+        303
+      ],
+      "rates_percent": [
+        6.262230919765166,
+        6.457925636007827,
+        6.262230919765166
+      ],
+      "false_positive_counts": [
+        32,
+        33,
+        32
+      ],
+      "true_nonfailure_denominators": [
+        511,
+        511,
+        511
+      ]
+    }
+  ],
+  "selected_cases": [
+    {
+      "id": "fatigue_low_load_128_seed303_sample445",
+      "condition": "low_load_128",
+      "seed": 303,
+      "sample_index": 445,
+      "post_test_descriptive_selection": true,
+      "selection": "Earliest constrained-model false positive among true nonfailures; ties by seed/sample",
+      "true_event_step_or_horizon_plus_one": 129,
+      "true_final_crack": 0.9770975112915039,
+      "models": {
+        "gru": {
+          "event_step_or_horizon_plus_one": 61,
+          "final_crack": 0.9806897640228271
+        },
+        "constrained": {
+          "event_step_or_horizon_plus_one": 87,
+          "final_crack": 1.0
+        }
+      },
+      "sources": {
+        "gru": {
+          "file": "./outputs/history_physics_benchmark_20261110/predictions/fatigue_gru_seed303_low_load_128.npz",
+          "sha256": "8ebbcba7d03d31a7e99c828cee2645a860b1df71f4b7bf9c4d9d13a2e85df742"
+        },
+        "constrained": {
+          "file": "./outputs/history_physics_benchmark_20261110/predictions/fatigue_constrained_seed303_low_load_128.npz",
+          "sha256": "9b1344aee2f425658e9a8af400632783ac4901aef36818affdb8c654828b03f1"
+        }
+      }
+    },
+    {
+      "id": "fatigue_random_128_seed202_sample394",
+      "condition": "random_128",
+      "seed": 202,
+      "sample_index": 394,
+      "post_test_descriptive_selection": true,
+      "selection": "Largest capped event-time error among GRU missed true failures; ties by seed/sample",
+      "true_event_step_or_horizon_plus_one": 30,
+      "true_final_crack": 1.0,
+      "models": {
+        "gru": {
+          "event_step_or_horizon_plus_one": 129,
+          "final_crack": 0.9547728300094604
+        },
+        "constrained": {
+          "event_step_or_horizon_plus_one": 31,
+          "final_crack": 1.0
+        }
+      },
+      "sources": {
+        "gru": {
+          "file": "./outputs/history_physics_benchmark_20261110/predictions/fatigue_gru_seed202_random_128.npz",
+          "sha256": "f76f62a9ac4ab968b3baed4d057c7a46275d230aee6f7af89c2692aacb1be9fd"
+        },
+        "constrained": {
+          "file": "./outputs/history_physics_benchmark_20261110/predictions/fatigue_constrained_seed202_random_128.npz",
+          "sha256": "7a2296f7e4ebd3a16eb5dd6050a4a4ed0d7636a36c1c53da2baa2ffeef09e90d"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "step": 100,
+    "train_batch_mse": 0.00016478639736305922,
+    "val_mse": 0.00015151156185311265,
+    "elapsed_seconds": 0.848886625142768,
+    "unclipped_gradient_norm": 0.0006233405438251793,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 200,
+    "train_batch_mse": 7.55598593968898e-05,
+    "val_mse": 7.43514806345047e-05,
+    "elapsed_seconds": 1.5962304170243442,
+    "unclipped_gradient_norm": 0.0006611389108002186,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 300,
+    "train_batch_mse": 4.7179433749988675e-05,
+    "val_mse": 3.951075223085354e-05,
+    "elapsed_seconds": 2.4663168331608176,
+    "unclipped_gradient_norm": 0.0008628011564724147,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 400,
+    "train_batch_mse": 1.9394752598600462e-05,
+    "val_mse": 2.8004036266793264e-05,
+    "elapsed_seconds": 3.7232807921245694,
+    "unclipped_gradient_norm": 0.0007975808111950755,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 500,
+    "train_batch_mse": 1.3982053133076988e-05,
+    "val_mse": 1.6174141364899697e-05,
+    "elapsed_seconds": 4.558488167123869,
+    "unclipped_gradient_norm": 0.0006091182003729045,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 600,
+    "train_batch_mse": 1.819043063733261e-05,
+    "val_mse": 1.1615095331762859e-05,
+    "elapsed_seconds": 5.357356542022899,
+    "unclipped_gradient_norm": 0.0001131673197960481,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 700,
+    "train_batch_mse": 6.211394065758213e-06,
+    "val_mse": 8.515060585523315e-06,
+    "elapsed_seconds": 6.182333167176694,
+    "unclipped_gradient_norm": 0.00012167950626462698,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 800,
+    "train_batch_mse": 8.125985914375633e-06,
+    "val_mse": 8.00917683818625e-06,
+    "elapsed_seconds": 7.090262500103563,
+    "unclipped_gradient_norm": 0.0013478018809109926,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 900,
+    "train_batch_mse": 8.754403097555041e-06,
+    "val_mse": 7.838110263946874e-06,
+    "elapsed_seconds": 8.10554595803842,
+    "unclipped_gradient_norm": 0.0007994463085196912,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1000,
+    "train_batch_mse": 8.506221092829946e-06,
+    "val_mse": 5.515656880561437e-06,
+    "elapsed_seconds": 9.165911792078987,
+    "unclipped_gradient_norm": 0.0005450849421322346,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1100,
+    "train_batch_mse": 4.866154995397665e-06,
+    "val_mse": 6.285376855430513e-06,
+    "elapsed_seconds": 9.985365667147562,
+    "unclipped_gradient_norm": 8.862168033374473e-05,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1200,
+    "train_batch_mse": 6.653147465840448e-06,
+    "val_mse": 6.844233496394736e-06,
+    "elapsed_seconds": 10.832360125146806,
+    "unclipped_gradient_norm": 0.0014329692348837852,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1300,
+    "train_batch_mse": 5.022456207370851e-06,
+    "val_mse": 7.273824962794606e-06,
+    "elapsed_seconds": 11.696038250112906,
+    "unclipped_gradient_norm": 0.0002201308379881084,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1400,
+    "train_batch_mse": 6.129210305516608e-06,
+    "val_mse": 4.345003958405869e-06,
+    "elapsed_seconds": 12.536000167019665,
+    "unclipped_gradient_norm": 0.0003607355756685138,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  },
+  {
+    "step": 1500,
+    "train_batch_mse": 3.7985928429407068e-06,
+    "val_mse": 3.7166697381962877e-06,
+    "elapsed_seconds": 13.439952583052218,
+    "unclipped_gradient_norm": 0.00021618290338665247,
+    "zero_gradient_updates_so_far": 0,
+    "projection": null
+  }
+]
